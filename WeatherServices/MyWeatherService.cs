@@ -6,12 +6,14 @@ namespace InterfaceLecture.WeatherServices
     {
         public Task<Weather> TryGetWeatherAsync(string cityCode)
         {
-            return Task.Run(() => cityCode switch
+            var weather = cityCode switch
             {
                 "001" => Weather.Sunny,
                 "002" => Weather.Cloudy,
                 _ => Weather.Rainy
-            });
+            };
+
+            return Task.FromResult(weather);
         }
     }
 }

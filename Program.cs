@@ -10,6 +10,6 @@ public class Program
         IMovable movable = new Car();
 
         var app = new App(movable, service);
-        app.Run();
+        _ = app.RunAsync("002");
     }
 }
