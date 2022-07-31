@@ -1,3 +1,5 @@
+using InterfaceLecture.Core;
+
 namespace InterfaceLecture.Movables
 {
     public class Car : IMovable

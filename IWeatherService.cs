@@ -1,4 +1,4 @@
-namespace InterfaceLecture
+namespace InterfaceLecture.Core
 {
 
     public enum Weather
