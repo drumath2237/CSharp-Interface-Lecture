@@ -1,3 +1,10 @@
-﻿using System;
-
-Console.WriteLine("Helloooo");
+﻿namespace InterfaceLecture
+{
+    public class Program
+    {
+        public static void Main()
+        {
+            Console.WriteLine("Hi");
+        }
+    }
+}
