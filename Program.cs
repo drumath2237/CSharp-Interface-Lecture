@@ -1,10 +1,15 @@
-﻿namespace InterfaceLecture.Core
+﻿using InterfaceLecture.Core;
+using InterfaceLecture.Movables;
+using InterfaceLecture.WeatherServices;
+
+public class Program
 {
-    public class Program
+    public static void Main()
     {
-        public static void Main()
-        {
-            Console.WriteLine("Hi");
-        }
+        IWeatherService service = new MyWeatherService();
+        IMovable movable = new Car();
+
+        var app = new App(movable, service);
+        app.Run();
     }
 }

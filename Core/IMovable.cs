@@ -7,5 +7,4 @@ namespace InterfaceLecture.Core
         void GoRight();
         void GoLeft();
     }
-
 }

@@ -1,6 +1,5 @@
 namespace InterfaceLecture.Core
 {
-
     public enum Weather
     {
         Sunny,
