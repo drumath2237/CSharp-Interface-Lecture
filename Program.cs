@@ -6,8 +6,8 @@ public class Program
 {
     public static void Main()
     {
-        IWeatherService service = new MyWeatherService();
-        IMovable movable = new Car();
+        IWeatherService service = new RandomWeatherService();
+        IMovable movable = new Bus();
 
         var app = new App(movable, service);
         _ = app.RunAsync("002");
